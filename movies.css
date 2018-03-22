@@ -1,5 +1,33 @@
 body {
-  background-color: #CCCCCC;
+  background-color: #F5F5DC;
+  margin: 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #FF8C00;
+}
+
+.icon-search-input {
+    position: absolute;
+    right: 610px;
+    top: 154px;
+}
+
+.base {
+    width: 100%;
+    border-bottom: 5px solid red;
+    background-color: #ffffff;
+}
+
+.container{
+    width: 80%;
+    padding: 0px;
+    margin: 0 auto;
 }
 .mainbody,
 .header {
@@ -10,40 +38,38 @@ body {
     background-color: #F5F5DC;
 }
 .header {
-    border-bottom: 5px solid red;
-    background-color: #ffffff;
     height: 90px;
 }
-.grid-container {
+/*.grid-container {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
     background-color: transparent;
-    padding: 100px;
+    padding: 10px;
 }
 .grid-item {
     padding: 10px;
     font-size: 20px;
     text-align: center;
-}
+}*/
+
 
 .img-item {
     padding: 5px;
     width: 150px;
     height: 200px;
+    margin: 0 auto;
 }
 
 .topnav {
-    float: right;
-    overflow: hidden;
+    padding-left: 15px; 
 }
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
   color: #FF0000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 /* Change the color of links on hover */
@@ -52,22 +78,11 @@ body {
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #D3D3D3;
-  color: white;
-}
-
-.header img, .header .topnav, .header p {
-    display: inline-block;
-    vertical-align: middle;
- }
-
  .user{
     position: relative;
-     top: 0px;
-    right: 0px; 
+    top: 0px;
     color:#FF8C00;
+    padding-left: 200px;
  }
 
  input[type=text] {
@@ -86,6 +101,13 @@ hr {
 .titles{
     color:#FF8C00;
 }
+.search_div{
+    margin: 25px;
+}
 .empty_data_text{
     color: #D3D3D3;
+}
+
+.header_wrap{
+    float: right;  
 }

@@ -4,61 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Movie App</title>
     <link rel="stylesheet" type="text/css" href="movies.css">
+
+    <link rel="stylesheet" type="text/css" href="csswizardry-grids.css">
 </head>
 <body>
-        <div class="header">
+        <div class="base">
+            <div class="header container">
             <img src="imgs/logo-pop.png">
-            <p class="user">
-                Fernando Cabrera | <a href="#logout">Sign out</a>
-            </p> 
-            <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#popular">Popular Movies</a>
-                <a href="#top_rated">Top Rated</a>
-                <a href="#upcoming">Upcoming</a>
+            <div class="header_wrap">
+                <div>
+                  <p class="user">
+                    Fernando Cabrera | <a href="#logout">Sign out</a>
+                  </p>
+                </div>
+                <div>
+                  <div class="topnav">
+                    <a href="#home">Home</a>
+                    <a href="#popular">Popular Movies</a>
+                    <a href="#top_rated">Top Rated</a>
+                    <a href="#upcoming">Upcoming</a>
+                  </div>
+                </div>
+                
             </div>
+            
         </div>
-        <div class="mainbody">
-            <div style="padding: 50px">   
+        </div>
+        
+        <div class="mainbody container">
+            <div class="search_div">   
                 <input type="text" name="search" placeholder="Search..">
+                <div class="clearfix pbs">
+                    <svg class="icon icon-search-input"><use xlink:href="#icon-search"></use></svg>
+                </div>
             </div>
             <h2 class="titles">My Favorites</h2> 
             <hr align="center"/>
             <p class="empty_data_text">You haven't favorited any movies yet.</p>
             <h2 class="titles">Popular Movies</h2> 
             <hr align="center"/>
-            <div class="grid-container">
-                <div class="grid-item">
+            <div class="grid">
+                <div class="grid__item two-twelfths">
                     <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
                 </div>
-                <div class="grid-item">
+                <div class="grid__item two-twelfths">
                     <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
                 </div>
-                <div class="grid-item">
+                <div class="grid__item two-twelfths">
                     <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
                 </div>
-                <div class="grid-item">
+                <div class="grid__item two-twelfths">
+                    <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
+                </div>
+                <div class="grid__item two-twelfths">
+                    <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
+                </div>
+                <div class="grid__item two-twelfths">
                     <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
                 </div>
             </div>
             <h2 class="titles">Top Rated</h2> 
             <hr align="center"/>
-            <div class="grid-container">
-                <div class="grid-item">
+            <div class="grid">
+                <div class="grid__item two-twelfths">
                     <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
                 </div>
-                <div class="grid-item">
+                <div class="grid__item two-twelfths">
                     <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
                 </div>
-                <div class="grid-item">
+                <div class="grid__item two-twelfths">
                     <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
                 </div>
-                <div class="grid-item">
+                <div class="grid__item two-twelfths">
                     <img src="imgs/avengers-infinity-war.jpg" class="img-item" alt="Avengers Infinity war">
                 </div>
             </div>
+            
         </div>
+        
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+            <symbol id="icon-search" viewBox="0 0 32 32">
+            <title>search</title>
+            <path d="M31.715 28.953c0.381 0.381 0.381 0.999 0 1.381l-1.381 1.381c-0.382 0.381-1 0.381-1.381 0l-9.668-9.668c-0.105-0.105-0.175-0.229-0.222-0.361-1.983 1.449-4.418 2.314-7.063 2.314-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12 0 2.645-0.865 5.080-2.314 7.063 0.132 0.047 0.256 0.116 0.361 0.222l9.668 9.668zM12 4c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8c0-4.418-3.582-8-8-8z"></path>
+            </symbol>
+
+            </defs>
+        </svg>
 </body>
 </html>
