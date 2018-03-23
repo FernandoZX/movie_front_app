@@ -1,3 +1,5 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
 body {
   background-color: #F5F5DC;
   margin: 0;
@@ -78,19 +80,11 @@ body {
   color: black;
 }
 
- .user{
+.user {
     position: relative;
     top: 0px;
     color:#FF8C00;
     padding-left: 200px;
- }
-
- input[type=text] {
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    display: block;
-    margin : 0 auto;
-    width: 700px;
 }
 
 hr {
@@ -98,16 +92,39 @@ hr {
     border-top: 1px solid #808080;
     width: auto;
 }
-.titles{
+.titles {
     color:#FF8C00;
 }
-.search_div{
-    margin: 25px;
-}
-.empty_data_text{
+
+.empty_data_text {
     color: #D3D3D3;
 }
 
-.header_wrap{
+.header_wrap {
     float: right;  
+}
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+  display: inline-block;
+}
+.search input {
+  width: 250px;
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+.search input {
+  text-indent: 5px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.search .fa-search {
+  position: absolute;
+  top: 8px;
+  right: 10px;
 }
